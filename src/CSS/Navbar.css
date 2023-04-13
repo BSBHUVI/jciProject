@@ -1,0 +1,128 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px;
+    height: fit-content;
+   
+    
+}
+.logo_text{
+   font-weight: 700;
+   font-size: 1.5rem;
+   margin-left: 5rem;
+}
+.search_box{
+   
+    padding:0.5rem ;
+    border: none;
+    flex: 1;
+   
+}
+.search_container{
+    width: 35%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left:0.5rem ;
+    margin-left: 14rem;
+}
+.search_box:focus{
+    outline: none;
+}
+.button {
+    color: blue;
+    padding: 0.7em 1.7em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 0.5em;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+  
+               cursor: pointer;
+               border: 0.9px solid grey;
+               margin-left: 2.5rem;
+            
+  }
+  
+  .button:hover {
+    border: 1.5px solid black;
+  }
+  
+  .button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+               -4px -4px 12px #ffffff;
+  }
+  .profile{
+    margin-left: auto;
+  }
+  .buttons_container{
+    margin-left: 10rem;
+  }
+  .link{
+    text-decoration: none;
+  }
+  .menu_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 10;
+  }
+  .cancel_button{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .profile_button{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+ .content{
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+ }
+ .content:hover{
+    color: black;
+ }
+ .menu_contents{
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+ }
+ .place_icons{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    
+ }
+ .image_files{
+    margin-top: 1rem;
+ }
+ .profile_container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    height: fit-content;
+    padding-bottom: 3rem;
+    border: 1px solid black;
+    z-index: 10;
+    background-color: white;
+
+ }
+ .place_profile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ 
