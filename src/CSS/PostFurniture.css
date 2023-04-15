@@ -71,3 +71,19 @@
   .upload:active {
     transform: scale(0.9);
   }
+  .choosenImage{
+    width: 50%;
+    height: 15rem;
+    object-fit: contain;
+  }
+  .choosenImage > img{
+    width: 100%;
+    height: 100%;
+  }
+  .chooseImgContainer{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }

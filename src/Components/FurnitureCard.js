@@ -2,19 +2,30 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../CSS/FurnitureCard.css'
 
-function FurnitureCard({image}) {
+function FurnitureCard({val}) {
+  console.log(val);
   return (
     <div>
     <div className="card">
  <div className="image">
-    <img alt='table' className='table_img' src='https://tse2.mm.bing.net/th/id/OIP.bTu__qeMAOCkQS8hxrmATgHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7'/>
+    <img alt='table' className='table_img' src={val.ImageSrc1}/>
  </div>
   <div className="content">
-    <Link className='link' to="/">
+   
       <span style={{display:"block"}} className="title">
-       write the description and details of the furniture and the uses 
+      Posted By : {val.FurnitureName}
       </span>
-    </Link>
+      <span style={{display:"block"}} className="title">
+     Type : {val.FurnitureType}
+      </span>
+      <span style={{display:"block"}} className="title">
+      Price : {val.FurniturePrice}
+      </span>
+      
+      <p style={{display:"block",opacity:"0.6",fontSize:"small"}} className="title">
+      Description : {val.FurnitureDescription}
+      </p>
+    
     <Link className='link action' to="/productDetails" >
       Find out more
       <span aria-hidden="true">

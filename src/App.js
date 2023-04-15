@@ -10,16 +10,18 @@ import Cart from './Components/Cart';
 import Error404Page from './Components/Error404Page';
 
 
+
 function App() {
   return (
     <div className="App">
+   
     <Router>
       <Routes>
         <Route path='/' element={<Navbar/>}>
         <Route index path="/" element={<Home/>}/>
         <Route  path="/login" element={<Login/>}/>
         <Route  path="/register" element={<Register/>}/>
-        <Route path="/postfurniture"  element={<PostFurniture/>}/>
+     <Route path="/postfurniture"  element={<PostFurniture/>}/>
         <Route path='/productDetails' element={<ProductDetails/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path='*' element={<Error404Page/>}/>
@@ -29,6 +31,7 @@ function App() {
         </Route>
       </Routes>
     </Router>
+   
      
     </div>
   );
